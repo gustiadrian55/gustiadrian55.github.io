@@ -10,23 +10,30 @@
     <title>Gusti Adrianta - Portfolio</title>
 </head>
 <body>
-    <header class="header">
-        <h3 class="text-logo">GUSTI ADRIAN</h3>
+    <nav>
+        <div class="navbar">
+            <div class="text-logo"><h3>GUSTI ADRIAN</h3></div>
+            <label for="check" class="checkbox">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <input type="checkbox" name="check" id="check">
+            <ul>
+                <li><a href="https://www.instagram.com/gusti.fx/" target="_blank"><i class='bx bxl-twitter' ></i></a></li>
+                <li><a href="https://x.com/GustiRBX" target="_blank"><i class='bx bxl-instagram-alt' ></i></a></li>
+                <li><a href="https://www.linkedin.com/in/gustiadrianta/" target="_blank"><i class='bx bxl-linkedin-square'></i></a></li>
+            </ul>
+        </div>
+    </nav>
         
-        <nav class="navbar">
-            <a href="https://www.instagram.com/gusti.fx/" target="_blank"><i class='bx bxl-twitter' ></i></a>
-            <a href="https://x.com/GustiRBX" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
-            <a href="https://www.linkedin.com/in/gustiadrianta/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
-        </nav>
-    </header>
-
-    <main class="main-text">
-        <p>Graphic Designer</p>
-        <h1>Hi, i'm <span>Adrian</span><br>from Indonesia</h1>
-        
-        <button class="button-see-more" type="button" onClick="document.getElementById('button-see-more').scrollIntoView();"">See more</button>
-    </main>
-
+    <div class="container">
+        <main class="main-text">
+            <p>Graphic Designer</p>
+            <h1>Hi, i'm <span>Adrian</span><br>from Indonesia</h1>
+            
+            <button class="button-see-more" type="button" onClick="document.getElementById('button-see-more').scrollIntoView();"">See more</button>
+        </main>
+    </div>
+    
     <div id="button-see-more">
         <div class="container">
             <div class="row">
@@ -36,7 +43,7 @@
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
                     <p>Hello! Introducing my name Adrian/Gusti and I am a game developer on the Roblox platform focusing on design and 3D Modeling with 5 years of experience.</p>
-    
+                    
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experiences')">Experiences</p>
@@ -60,9 +67,9 @@
             </div>
         </div>
     </div>
-
+    
     <!-- SERVICES -->
-
+    
     <div id="button-take-a-look">
         <div class="container">
             <h1 class="sub-title">My Services</h1>
@@ -85,9 +92,9 @@
             </div>
         </div>
     </div>
-
+    
     <!-- PORTFOLIO -->
-
+    
     <div id="portfolio">
         <div class="container">
             <h1 class="sub-title">My Work</h1>
