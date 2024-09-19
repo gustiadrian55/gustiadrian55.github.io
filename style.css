@@ -8,71 +8,84 @@
 }
 
 body {
+    display: inline-block;
     /* display: flex; */
-    min-height: 100%;
+    min-height: 100vh;
     font-family: Poppins, sans-serif;
     /* min-height: 100vh; */
     background: linear-gradient(145deg, #2db196, #1c4e51);
 }
 
-/* HEADER */
-
-.header {
-    position: fixed;
-    border-radius: 45px;
-    top: 3%;
-    display: flex;
-    margin: auto;
-    position: sticky;
-    width: 50%;
-    padding: 10px 230px 10px;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid #99fde1;
-    box-shadow: 0 3px 25px 0 rgba(0, 0, 0, 0.37);
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-}
-
 .container {
-    padding: 100px 10%;
+    padding: 10px 10%;
 }
 
-.text-logo {
-    color: #1c4e51;
-    letter-spacing: 2px;
-    margin-left: -15px;
-    cursor: pointer;
-    font-weight: 600;
-    padding-right: 300px;
-    margin-left: -190px;
-    transition: 0.3s;
-}
-
-.text-logo:hover {
-    color: #99fde1;
+/* HEADER */
+nav {
+    padding: 10px 10%;
+    width: 100%;
+    background-color: #1f3d3f;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
 }
 
 .navbar {
-    margin-right: -170px;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0.2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.navbar a {
-    top: 10px;
-    color: #1c4e51;
-    margin-top: -5px;
-    margin-left: 5px;
-    align-self: center;
-    padding-bottom: -25px;
-    font-size: 35px;
-    transition: .5s;
+nav .text-logo h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #25686b;
+    transition: 0.3s;
+    cursor: pointer;
+    letter-spacing: 3px;
 }
 
-.navbar a:hover{
-    color: #99fde1;
-    transform: scale(1);
+nav .text-logo h3:hover {
+    color: #01f9c6;
+}
+
+nav .checkbox {
+    display: none;
+}
+
+nav input {
+    display: none;
+}
+
+nav .checkbox i {
+    font-size: 2rem;
+    color: #01f9c6;
+    cursor: pointer;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    transition: left 0.3s;
+    cursor: pointer;
+}
+
+.navbar ul li a {
+    padding: 0.5rem 1rem;
+    font-size: 40px;
+    text-decoration: none;
+    color: #25686b;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #01f9c6;
 }
 
 /* MAIN */
@@ -102,7 +115,6 @@ p {
     color: white;
     margin-top: 20%;
     font-size: 30px;
-    padding-left: 485px;
     margin-top: 300px;
     margin-bottom: 100px;
 }
