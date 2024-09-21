@@ -24,7 +24,7 @@ body {
 nav {
     padding: 10px 10%;
     width: 100%;
-    background-color: #1f3d3f;
+    background: #1c4e51;
     position: fixed;
     top: 0;
     left: 0;
@@ -397,7 +397,7 @@ nav .fas{
     display: none;
 }
 
-@media only screen and (max-width: 600px){
+@media (width < 750px){
     #header{
         background-image: url(images/phone-background.png);
     }
@@ -422,5 +422,29 @@ nav .fas{
     }
     .tab-links{
         font-size: 16px;
+    }
+
+    nav .checkbox {
+        display: block;
+    }
+
+    .navbar ul {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 85px);
+        left: -100%;
+        top: 85px;
+        background-color: #1f3d3f;
+        flex-direction: row;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    nav #check:checked ~ ul {
+        left: 0;
+    }
+
+    .navbar ul li a {
+        font-size: 65px
     }
 }
